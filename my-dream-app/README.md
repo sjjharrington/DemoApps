@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Comments
 
-This Application will be used as a reference App for me to try outt new things whilst working with Angular.
+This Application will be used as a reference App for me to try out new things whilst working with Angular.
