@@ -3,8 +3,6 @@
  */
 package com.tutorial.springboot.controller;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +30,7 @@ public class HelloWorldControllerTest {
 
     @Test
     public void shouldReturnDefaultMessage() throws Exception {
-        this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk())
+        this.mockMvc.perform(get("/hello")).andDo(print()).andExpect(status().isOk())
                 .andExpect(content().string(containsString("Hello World")));
     }
 

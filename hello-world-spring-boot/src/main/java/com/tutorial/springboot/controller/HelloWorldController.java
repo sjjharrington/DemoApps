@@ -4,6 +4,7 @@
 package com.tutorial.springboot.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -12,8 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class HelloWorldController {
-   @RequestMapping("/")
+   @RequestMapping(method={RequestMethod.GET},value={"/hello"})
    public String sayHello() {
+      return "Hello World";
+   }
+   
+   @RequestMapping(method={RequestMethod.POST},value={"/hello"})
+   public String postHello() {
       return "Hello World";
    }
 }
